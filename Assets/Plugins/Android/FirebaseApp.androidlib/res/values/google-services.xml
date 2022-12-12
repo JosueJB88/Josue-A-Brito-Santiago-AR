@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:keep="@string/gcm_defaultSenderId,@string/google_storage_bucket,@string/project_id,@string/google_api_key,@string/google_crash_reporting_api_key,@string/google_app_id,@string/default_web_client_id">
+  <string name="gcm_defaultSenderId" translatable="false">195035508922</string>
+  <string name="google_storage_bucket" translatable="false">bd-turismo-en-santiago.appspot.com</string>
+  <string name="project_id" translatable="false">bd-turismo-en-santiago</string>
+  <string name="google_api_key" translatable="false">AIzaSyD6yvxhPioc-t6pmKkHZXhnocm2334n57Q</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyD6yvxhPioc-t6pmKkHZXhnocm2334n57Q</string>
+  <string name="google_app_id" translatable="false">1:195035508922:android:f52fc2cb8025154f5e5283</string>
+  <string name="default_web_client_id" translatable="false">195035508922-00m2t0vntfteou5qgftq3he7fd63qq41.apps.googleusercontent.com</string>
+</resources>

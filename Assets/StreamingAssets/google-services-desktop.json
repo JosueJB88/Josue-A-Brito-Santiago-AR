@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "195035508922",
+    "project_id": "bd-turismo-en-santiago",
+    "storage_bucket": "bd-turismo-en-santiago.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:195035508922:android:f52fc2cb8025154f5e5283",
+        "android_client_info": {
+          "package_name": "com.JB.TurismoenSantiagoAR"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "195035508922-00m2t0vntfteou5qgftq3he7fd63qq41.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6yvxhPioc-t6pmKkHZXhnocm2334n57Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "195035508922-00m2t0vntfteou5qgftq3he7fd63qq41.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
