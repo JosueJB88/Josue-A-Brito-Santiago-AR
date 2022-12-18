@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using Firebase.Firestore;
 using UnityEngine;
@@ -7,7 +7,8 @@ using TMPro;
 public class PopularPlacesController : MonoBehaviour
 {
     FirebaseFirestore Database;
-    public TMP_InputField TextInputField;
+	public TMP_InputField TextInputField;
+	public GameObject abusador;
     void Start()
     {
         Database = FirebaseFirestore.DefaultInstance;
@@ -24,7 +25,8 @@ public class PopularPlacesController : MonoBehaviour
             Dictionary<string, object> city = documentSnapshot.ToDictionary();
             foreach (KeyValuePair<string, object> pair in city)
             {
-                Debug.Log("{0}: {1}" + pair.Key + pair.Value);
+	            Debug.Log("{0}: {1}" + pair.Key + pair.Value);
+	            abusador.SetActive(true);
             }
             // Console.WriteLine("");
         }
