@@ -7,9 +7,11 @@ using TMPro;
 
  public class Manager: MonoBehaviour
  {
+ 	
+ 	
 	 public GameObject Holder, PaginaLugares,PaginaLugares2,PaginaLugares3,PaginaLugares4,Categorias1,Categorias2,
 		 PaginaLugares5,Categorias3,PaginaLugares6,PaginaLugares7,PaginaLugares8,PaginaLugares9,PaginaLugares10,
-		 PaginaLugares11;
+		 PaginaLugares11,busqueda;
 	 
 	 public Button Lugar1, Lugar2, Lugar3,Lugar4,categoria1,historia,categoria2,entretenimiento,categoria3,gastronomia, 
 		 butonAtras,butonAtras2,butonAtras3,butonAtras4,butonAtras5,hist1,hist2,hist3,butonAtras6,hist4,hist5,hist6,
@@ -68,6 +70,7 @@ using TMPro;
 	 { 
 	 	
 		 Categorias1.SetActive(false);
+		 busqueda.SetActive(false);
 		 Categorias2.SetActive(false);
 		 Categorias3.SetActive(false);
 		
@@ -253,6 +256,7 @@ using TMPro;
 		 PaginaLugares9.SetActive(false);
 		 PaginaLugares10.SetActive(false);
 		 PaginaLugares11.SetActive(false);
+		 busqueda.SetActive(true);
      
 	 }
 	
