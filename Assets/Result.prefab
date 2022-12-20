@@ -218,8 +218,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 50.132, y: -5.3546}
-  m_SizeDelta: {x: -100.26, y: 10.7092}
+  m_AnchoredPosition: {x: 73.892, y: -5.1167}
+  m_SizeDelta: {x: -147.7836, y: -32.377}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &7187316561558605227
 MonoBehaviour:
@@ -3651,19 +3651,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6216222477150170368}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4054050573183067288}
-        m_TargetAssemblyTypeName: URL, Assembly-CSharp
-        m_MethodName: Open
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &4054050573183067288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3676,7 +3664,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18fb813328b6d0d4cb0773398bbca260, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Url: https://goo.gl/maps/EezmGtek29ihCcko7
+  Url: 
 --- !u!1 &6132071634392526033
 GameObject:
   m_ObjectHideFlags: 0
@@ -4367,11 +4355,11 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5b3d2adb725a0d34d839b841262fed09, type: 3}
   - {fileID: 21300000, guid: 0c7685dfb1815a349b201f81e59448ef, type: 3}
   - {fileID: 21300000, guid: e0ed5969df6534c488c8ef12d46ec547, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 3a9b59bb5fa780648b01ad7802c68df5, type: 3}
+  - {fileID: 21300000, guid: cbead1aa984331742986c1078e30875f, type: 3}
+  - {fileID: 21300000, guid: 3e60f179b91e52a4db5d57b48269978f, type: 3}
+  - {fileID: 21300000, guid: 8117f0003d0954e42a657f0e193516f5, type: 3}
+  - {fileID: 21300000, guid: 80b69a15de4d87b45b165b1df9dc28af, type: 3}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -4456,6 +4444,39 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 80c7aaff50d49c142a8487ce9adfc259, type: 3}
   - {fileID: 21300000, guid: a7212d3dfd11c6b42abf5f3ee80cde4e, type: 3}
   - {fileID: 21300000, guid: 135747525611b33479005ec05c657b8b, type: 3}
+  - {fileID: 21300000, guid: 3a9b59bb5fa780648b01ad7802c68df5, type: 3}
+  - {fileID: 21300000, guid: 40366d24272f41742a4b906011c3248c, type: 3}
+  - {fileID: 21300000, guid: 231558904c7cdca4aa84b60f62976c40, type: 3}
+  - {fileID: 21300000, guid: f6c63e06df963c84f898e3e9e7be5b10, type: 3}
+  - {fileID: 21300000, guid: aad9ca8736e904f4c9dfcc962d71624f, type: 3}
+  - {fileID: 21300000, guid: 27da01d5369fe3f43992b366418dc0f5, type: 3}
+  - {fileID: 21300000, guid: cbead1aa984331742986c1078e30875f, type: 3}
+  - {fileID: 21300000, guid: f1057c15647de224da4216f755aa9921, type: 3}
+  - {fileID: 21300000, guid: e0a923c79db53574fa57c9fae90ba740, type: 3}
+  - {fileID: 21300000, guid: 09098b1538ba72a47af111a303ff4bac, type: 3}
+  - {fileID: 21300000, guid: 5d8b4b3643796d9419a122a7ad9aafb4, type: 3}
+  - {fileID: 21300000, guid: 12efb4104e37787409e51bd647017726, type: 3}
+  - {fileID: 21300000, guid: 3e60f179b91e52a4db5d57b48269978f, type: 3}
+  - {fileID: 21300000, guid: b2c4d485338fa6941a72fada832745ec, type: 3}
+  - {fileID: 21300000, guid: f14bc32dfba13354d801490c368d3c44, type: 3}
+  - {fileID: 21300000, guid: 76d1a28b9c75c7d46b609c95ec94202b, type: 3}
+  - {fileID: 21300000, guid: 3e60f179b91e52a4db5d57b48269978f, type: 3}
+  - {fileID: 21300000, guid: ca32c97cb670b374e8abc4d28be8c85d, type: 3}
+  - {fileID: 21300000, guid: 8117f0003d0954e42a657f0e193516f5, type: 3}
+  - {fileID: 21300000, guid: da8e0f24be143394ca13af8d05bc6033, type: 3}
+  - {fileID: 21300000, guid: 2758f4243cc264c4a994f0bb7153179f, type: 3}
+  - {fileID: 21300000, guid: 2e38eb4087ec1c94b9d9602fda821d5a, type: 3}
+  - {fileID: 21300000, guid: be441190598454749afb1c2f5f5ef727, type: 3}
+  - {fileID: 21300000, guid: 96738c5c1e2b84d43a630b892b22df85, type: 3}
+  - {fileID: 21300000, guid: 80b69a15de4d87b45b165b1df9dc28af, type: 3}
+  - {fileID: 21300000, guid: 5a54d90b4fb6cf240b973fabe74ded24, type: 3}
+  - {fileID: 21300000, guid: caf1c5e6cbabc16468c4580254d0e7bb, type: 3}
+  - {fileID: 21300000, guid: a7dc491929f9e5d49ac8df12588e7505, type: 3}
+  - {fileID: 21300000, guid: 235f1ef5f48292448a41e25ccf00108e, type: 3}
+  - {fileID: 21300000, guid: 62de6d30fb24a904c94b8be0ec799cfb, type: 3}
+  - {fileID: 21300000, guid: 6f92e714e193b5d4a97ecd64f46ebdff, type: 3}
+  - {fileID: 21300000, guid: 3e09646e5cca2ae46a0574764e62baea, type: 3}
+  - {fileID: 21300000, guid: 032f03d0901d7a9418006d3e83545262, type: 3}
   im1: {fileID: 684583455713872206}
   im2: {fileID: 1500377476097319681}
   im3: {fileID: 4746582143811693620}
@@ -4468,6 +4489,7 @@ MonoBehaviour:
   ima5: {fileID: 8342008238868427940}
   ima6: {fileID: 5378827164632775666}
   imput: 
+  Url: 
   tx1: {fileID: 8502586690204583456}
   tx2: {fileID: 2792813866700867401}
   tx3: {fileID: 7778414148706930578}
@@ -4483,7 +4505,8 @@ MonoBehaviour:
   op4: {fileID: 4870078397817870654}
   op5: {fileID: 9145053142995362164}
   lupa: {fileID: 5993237532929104343}
-  rut: {fileID: 6876721910332650099}
+  mapa: {fileID: 0}
+  rut: {fileID: 5728074443057050869}
   Resultado: {fileID: 2285083054123070435}
   opcioness: {fileID: 8025788209534611437}
 --- !u!1 &6876721911381025067

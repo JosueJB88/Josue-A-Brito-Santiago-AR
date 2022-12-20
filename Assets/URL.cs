@@ -6,7 +6,7 @@ public class URL : MonoBehaviour
 {
 	public string Url;
 	 
-	public	void Open()
+	public	void Open(string Url)
 	{
 		Application.OpenURL(Url);	
 	}

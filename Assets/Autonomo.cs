@@ -14,10 +14,10 @@ public class Autonomo : MonoBehaviour
 	
 	public Image im1,im2,im3,im4,im5, ima1,ima2,ima3,ima4,ima5,ima6;
 	
-	public string imput;
+	public string imput,Url;
 	public TMP_Text tx1,tx2,tx3,tx4,tx5,txt1,txt2;
 	
-	public Button Atras,Atras2, op1,op2,op3,op4,op5,lupa;
+	public Button Atras,Atras2, op1,op2,op3,op4,op5,lupa,mapa;
 	
 	public GameObject rut,Resultado,opcioness;
 	
@@ -39,7 +39,7 @@ public class Autonomo : MonoBehaviour
 		imput = TextInputField.text;
 		
 		
-		switch (imput/* = "Estadio Cibao"*/){
+		switch (imput /*= "romantico"*/){
 	    	
 		case "Monumento a los Héroes de la Restauración":
 			op1.onClick.AddListener(()=> RseultadoOP(1));
@@ -77,8 +77,163 @@ public class Autonomo : MonoBehaviour
 		    
 			im5.sprite = Ima[0];
 			break;
+			
+			
+		case "amor":
+			op1.onClick.AddListener(()=> RseultadoOP(1));
+			tx1.text = " Monumento de la restauracion";
+		    
+			im1.sprite = Ima[1];
+		    
+		    
+		    
+			op2.onClick.AddListener(()=> RseultadoOP(7));
+			tx1.text = "Hazlo Simple";
+		    
+			im1.sprite = Ima[7];
+		    
+		    
+		    
+		    
+			op3.onClick.AddListener(()=> RseultadoOP(9));
+			tx1.text = "Cinema Centro Cibao";
+		    
+			im1.sprite = Ima[9];
+		    
+		    
+		    
+		    
+			op4.onClick.AddListener(()=> RseultadoOP(17));
+			tx1.text = "Jardín Botánico";
+		    
+			im1.sprite = Ima[14];
+		    
+		    
+		    
+			op5.onClick.AddListener(()=> RseultadoOP(19));
+			tx1.text = "McDonald's Estrella Sadhalá";
+		    
+			im1.sprite = Ima[16];
+			break;
+			
+			
+		case "romantico":
+			op1.onClick.AddListener(()=> RseultadoOP(1));
+			tx1.text = " Monumento de la restauracion";
+		    
+			im1.sprite = Ima[1];
+		    
+		    
+		    
+			op2.onClick.AddListener(()=> RseultadoOP(7));
+			tx1.text = "Hazlo Simple";
+		    
+			im1.sprite = Ima[7];
+		    
+		    
+		    
+		    
+			op3.onClick.AddListener(()=> RseultadoOP(9));
+			tx1.text = "Cinema Centro Cibao";
+		    
+			im1.sprite = Ima[9];
+		    
+		    
+		    
+		    
+			op4.onClick.AddListener(()=> RseultadoOP(17));
+			tx1.text = "Jardín Botánico";
+		    
+			im1.sprite = Ima[14];
+		    
+		    
+		    
+			op5.onClick.AddListener(()=> RseultadoOP(19));
+			tx1.text = "McDonald's Estrella Sadhalá";
+		    
+			im1.sprite = Ima[16];
+			break;
+		    
+		case "monumento":
+			op1.onClick.AddListener(()=> RseultadoOP(1));
+			tx1.text = " Monumento de la restauracion";
+		    
+			im1.sprite = Ima[1];
+		    
+		    
+		    
+			// op2.onClick.AddListener(()=> RseultadoOP(1));
+			tx2.text = "No hay mas opciones  ";
+		    
+			im2.sprite = Ima[0];
+		    
+		    
+		    
+		    
+			// op3.onClick.AddListener(()=> RseultadoOP(1));
+			tx3.text = "No hay mas opciones ";
+		    
+			im3.sprite = Ima[0];
+		    
+		    
+		    
+		    
+			// op4.onClick.AddListener(()=> RseultadoOP(1));
+			tx4.text = "No hay mas opciones ";
+		    
+			im4.sprite = Ima[0];
+		    
+		    
+		    
+			// op5.onClick.AddListener(()=> RseultadoOP(1));
+			tx5.text = " ";
+		    
+			im5.sprite = Ima[0];
+			break;
+		    
+		    
 		    
 		case "Estadio Cibao":
+		   
+			op1.onClick.AddListener(()=> RseultadoOP(2));
+			tx1.text = " Estadio Cibao";
+		    
+			im1.sprite = Ima[2];
+		    
+		    
+		    
+			// op2.onClick.AddListener(()=> RseultadoOP(1));
+			tx2.text = " No hay mas opciones ";
+		    
+			im2.sprite = Ima[0];
+		    
+		    
+		    
+		    
+			// op3.onClick.AddListener(()=> RseultadoOP(1));
+			tx3.text = "No hay mas opciones ";
+		    
+			im3.sprite = Ima[0];
+		    
+		    
+		    
+		    
+			// op4.onClick.AddListener(()=> RseultadoOP(1));
+			tx4.text = "No hay mas opciones ";
+		    
+			im4.sprite = Ima[0];
+		    
+		    
+		    
+			// op5.onClick.AddListener(()=> RseultadoOP(1));
+			tx5.text = " No hay mas opciones ";
+		    
+			im5.sprite = Ima[0];
+			break;
+			
+			
+			
+		case "estadio":
 		   
 			op1.onClick.AddListener(()=> RseultadoOP(2));
 			tx1.text = " Estadio Cibao";
@@ -167,6 +322,45 @@ public class Autonomo : MonoBehaviour
 			tx2.text = "No hay mas opciones  ";
 		    
 			im2.sprite = Ima[0];
+		    
+		    
+		    
+		    
+			// op3.onClick.AddListener(()=> RseultadoOP(1));
+			tx3.text = "No hay mas opciones ";
+		    
+			im3.sprite = Ima[0];
+		    
+		    
+		    
+		    
+			// op4.onClick.AddListener(()=> RseultadoOP(1));
+			tx4.text = "No hay mas opciones ";
+		    
+			im4.sprite = Ima[0];
+		    
+		    
+		    
+			// op5.onClick.AddListener(()=> RseultadoOP(1));
+			tx5.text = "No hay mas opciones ";
+		    
+			im5.sprite = Ima[0];
+			break;
+			
+			
+		case "fe":
+		   
+			op1.onClick.AddListener(()=> RseultadoOP(4));
+			tx1.text = " Catedral Santiago Apóstol";
+		    
+			im1.sprite = Ima[4];
+		    
+		    
+		    
+			op2.onClick.AddListener(()=> RseultadoOP(15));
+			tx1.text = "Parroquia Nuestra Sra. De La Altagracia";
+		    
+			im1.sprite = Ima[12];
 		    
 		    
 		    
@@ -411,6 +605,279 @@ public class Autonomo : MonoBehaviour
 			tx4.text = "Crunchy Pizza La Duarte ";
 		    
 			im4.sprite = Ima[11];
+		    
+		    
+		    
+			// op5.onClick.AddListener(()=> RseultadoOP(1));
+			tx5.text = "No hay mas opciones ";
+		    
+			im5.sprite = Ima[0];
+			break;
+			
+		case "Parroquia Nuestra Sra. De La Altagracia":
+		   
+			op1.onClick.AddListener(()=> RseultadoOP(15));
+			tx1.text = "Parroquia Nuestra Sra. De La Altagracia";
+		    
+			im1.sprite = Ima[12];
+		    
+		    
+		    
+			// op2.onClick.AddListener(()=> RseultadoOP(1));
+			tx2.text = "No hay mas opciones  ";
+		    
+			im2.sprite = Ima[0];
+		    
+		    
+		    
+		    
+			// op3.onClick.AddListener(()=> RseultadoOP(1));
+			tx3.text = "No hay mas opciones ";
+		    
+			im3.sprite = Ima[0];
+		    
+		    
+		    
+		    
+			// op4.onClick.AddListener(()=> RseultadoOP(1));
+			tx4.text = "No hay mas opciones ";
+		    
+			im4.sprite = Ima[0];
+		    
+		    
+		    
+			// op5.onClick.AddListener(()=> RseultadoOP(1));
+			tx5.text = "No hay mas opciones ";
+		    
+			im5.sprite = Ima[0];
+			break;
+			
+			
+		case "Lovera Bar 2":
+		   
+			op1.onClick.AddListener(()=> RseultadoOP(16));
+			tx1.text = "Lovera Bar 2";
+		    
+			im1.sprite = Ima[13];
+		    
+		    
+		    
+			// op2.onClick.AddListener(()=> RseultadoOP(1));
+			tx2.text = "No hay mas opciones  ";
+		    
+			im2.sprite = Ima[0];
+		    
+		    
+		    
+		    
+			// op3.onClick.AddListener(()=> RseultadoOP(1));
+			tx3.text = "No hay mas opciones ";
+		    
+			im3.sprite = Ima[0];
+		    
+		    
+		    
+		    
+			// op4.onClick.AddListener(()=> RseultadoOP(1));
+			tx4.text = "No hay mas opciones ";
+		    
+			im4.sprite = Ima[0];
+		    
+		    
+		    
+			// op5.onClick.AddListener(()=> RseultadoOP(1));
+			tx5.text = "No hay mas opciones ";
+		    
+			im5.sprite = Ima[0];
+			break;
+		    
+		    
+		case "Jardín Botánico":
+		   
+			op1.onClick.AddListener(()=> RseultadoOP(17));
+			tx1.text = "Jardín Botánico";
+		    
+			im1.sprite = Ima[14];
+		    
+		    
+		    
+			// op2.onClick.AddListener(()=> RseultadoOP(1));
+			tx2.text = "No hay mas opciones  ";
+		    
+			im2.sprite = Ima[0];
+		    
+		    
+		    
+		    
+			// op3.onClick.AddListener(()=> RseultadoOP(1));
+			tx3.text = "No hay mas opciones ";
+		    
+			im3.sprite = Ima[0];
+		    
+		    
+		    
+		    
+			// op4.onClick.AddListener(()=> RseultadoOP(1));
+			tx4.text = "No hay mas opciones ";
+		    
+			im4.sprite = Ima[0];
+		    
+		    
+		    
+			// op5.onClick.AddListener(()=> RseultadoOP(1));
+			tx5.text = "No hay mas opciones ";
+		    
+			im5.sprite = Ima[0];
+			break;
+
+		    
+		case "Mazucamba Bar & Terraza":
+		   
+			op1.onClick.AddListener(()=> RseultadoOP(18));
+			tx1.text = "Mazucamba Bar & Terraza";
+		    
+			im1.sprite = Ima[15];
+		    
+		    
+		    
+			// op2.onClick.AddListener(()=> RseultadoOP(1));
+			tx2.text = "No hay mas opciones  ";
+		    
+			im2.sprite = Ima[0];
+		    
+		    
+		    
+		    
+			// op3.onClick.AddListener(()=> RseultadoOP(1));
+			tx3.text = "No hay mas opciones ";
+		    
+			im3.sprite = Ima[0];
+		    
+		    
+		    
+		    
+			// op4.onClick.AddListener(()=> RseultadoOP(1));
+			tx4.text = "No hay mas opciones ";
+		    
+			im4.sprite = Ima[0];
+		    
+		    
+		    
+			// op5.onClick.AddListener(()=> RseultadoOP(1));
+			tx5.text = "No hay mas opciones ";
+		    
+			im5.sprite = Ima[0];
+			break;
+			
+		case "McDonald's":
+		   
+			op1.onClick.AddListener(()=> RseultadoOP(19));
+			tx1.text = "McDonald's Estrella Sadhalá";
+		    
+			im1.sprite = Ima[16];
+		    
+		    
+		    
+			op2.onClick.AddListener(()=> RseultadoOP(20));
+			tx2.text = "McDonald's Juan Pablo Duarte";
+		    
+			im2.sprite = Ima[16];
+		    
+		    
+		    
+		    
+			op3.onClick.AddListener(()=> RseultadoOP(21));
+			tx3.text = "McDonald's San Luis ";
+		    
+			im3.sprite = Ima[16];
+		    
+		    
+		    
+		    
+			op4.onClick.AddListener(()=> RseultadoOP(22));
+			tx4.text = "McDonald's Las Colinas ";
+		    
+			im4.sprite = Ima[16];
+		    
+		    
+		    
+			// op5.onClick.AddListener(()=> RseultadoOP(1));
+			tx5.text = "No hay mas opciones ";
+		    
+			im5.sprite = Ima[0];
+			break;
+			
+			
+		case "para para pa pa":
+		   
+			op1.onClick.AddListener(()=> RseultadoOP(19));
+			tx1.text = "McDonald's Estrella Sadhalá";
+		    
+			im1.sprite = Ima[16];
+		    
+		    
+		    
+			op2.onClick.AddListener(()=> RseultadoOP(20));
+			tx2.text = "McDonald's Juan Pablo Duarte";
+		    
+			im2.sprite = Ima[16];
+		    
+		    
+		    
+		    
+			op3.onClick.AddListener(()=> RseultadoOP(21));
+			tx3.text = "McDonald's San Luis ";
+		    
+			im3.sprite = Ima[16];
+		    
+		    
+		    
+		    
+			op4.onClick.AddListener(()=> RseultadoOP(22));
+			tx4.text = "McDonald's Las Colinas ";
+		    
+			im4.sprite = Ima[16];
+		    
+		    
+		    
+			// op5.onClick.AddListener(()=> RseultadoOP(1));
+			tx5.text = "No hay mas opciones ";
+		    
+			im5.sprite = Ima[0];
+			break;
+			
+			
+			
+			
+		case "madonal":
+		   
+			op1.onClick.AddListener(()=> RseultadoOP(19));
+			tx1.text = "McDonald's Estrella Sadhalá";
+		    
+			im1.sprite = Ima[16];
+		    
+		    
+		    
+			op2.onClick.AddListener(()=> RseultadoOP(20));
+			tx2.text = "McDonald's Juan Pablo Duarte";
+		    
+			im2.sprite = Ima[16];
+		    
+		    
+		    
+		    
+			op3.onClick.AddListener(()=> RseultadoOP(21));
+			tx3.text = "McDonald's San Luis ";
+		    
+			im3.sprite = Ima[16];
+		    
+		    
+		    
+		    
+			op4.onClick.AddListener(()=> RseultadoOP(22));
+			tx4.text = "McDonald's Las Colinas ";
+		    
+			im4.sprite = Ima[16];
 		    
 		    
 		    
@@ -671,6 +1138,145 @@ public class Autonomo : MonoBehaviour
 			ima4.sprite = Galeria[63];
 			ima5.sprite = Galeria[64];
 			ima6.sprite = Galeria[68];
+			break;
+			
+			
+			
+		case 15:
+			Resultado.SetActive(true);
+		 opcioness.SetActive(false);
+		 
+		 ima1.sprite = Galeria[69];
+			txt1.text = "Parroquia Nuestra Sra. De La Altagracia";
+			txt2.text = " Parroquia y Santuario ubicado en la Arquidiócesis de " +
+				"Santiago. Fundada en el año 1874";
+			ima2.sprite = Galeria[70];
+			ima3.sprite = Galeria[71];
+			ima4.sprite = Galeria[72];
+			ima5.sprite = Galeria[73];
+			ima6.sprite = Galeria[74];
+			break;
+			
+		case 16:
+			Resultado.SetActive(true);
+		 opcioness.SetActive(false);
+		 
+		 ima1.sprite = Galeria[75];
+			txt1.text = "Lovera Bar 2";
+			txt2.text = " Establecimiento comercial donde se sirven bebidas alcohólicas , no alcohólicas y " +
+				"además, sirvan al público mediante precio, aperitivos, tapas, raciones, bocadillos u otros " +
+				"alimentos acompañada de música en vivo o dj, Santiago República Dominicana.";
+			ima2.sprite = Galeria[76];
+			ima3.sprite = Galeria[77];
+			ima4.sprite = Galeria[78];
+			ima5.sprite = Galeria[79];
+			ima6.sprite = Galeria[80];
+			break;
+			
+			
+		case 17:
+			Resultado.SetActive(true);
+		 opcioness.SetActive(false);
+		 
+		 ima1.sprite = Galeria[81];
+			txt1.text = "Jardín Botánico";
+			txt2.text = " Zona enorme con paredes, plantas exóticas, un arboreto," +
+				"un mariposario y senderos para ciclistas y peatones.";
+			ima2.sprite = Galeria[82];
+			ima3.sprite = Galeria[83];
+			ima4.sprite = Galeria[84];
+			ima5.sprite = Galeria[85];
+			ima6.sprite = Galeria[86];
+			break;
+			
+			
+			
+		case 18:
+			Resultado.SetActive(true);
+		 opcioness.SetActive(false);
+		 
+		 ima1.sprite = Galeria[87];
+			txt1.text = "Mazucamba Bar & Terraza";
+			txt2.text = "Mazucamba Bar & Terraza se encuentra en Santiago de los Caballeros, " +
+				"Santiago (República Dominicana). Esta empresa se desempeña en la siguiente " +
+				"industria: Bares, pubs y tabernas.";
+			ima2.sprite = Galeria[88];
+			ima3.sprite = Galeria[89];
+			ima4.sprite = Galeria[90];
+			ima5.sprite = Galeria[91];
+			ima6.sprite = Galeria[92];
+	
+			
+			/*Url="https://goo.gl/maps/wTvwYuyRmGKaebDo8";
+			
+			mapa.onClick.AddListener(()=> URL.Open(Url));*/
+			
+					
+
+			break;
+			
+			
+			
+			
+		case 19:
+			Resultado.SetActive(true);
+		 opcioness.SetActive(false);
+		 
+		 ima1.sprite = Galeria[93];
+			txt1.text = "McDonald's Estrella Sadhalá";
+			txt2.text = "Clásica cadena de comida rápida de larga trayectoria conocida " +
+				"por sus hamburguesas y papas fritas.";
+			ima2.sprite = Galeria[94];
+			ima3.sprite = Galeria[95];
+			ima4.sprite = Galeria[96];
+			ima5.sprite = Galeria[97];
+			ima6.sprite = Galeria[98];
+			break;
+			
+		case 20:
+			Resultado.SetActive(true);
+		 opcioness.SetActive(false);
+		 
+		 ima1.sprite = Galeria[93];
+			txt1.text = "McDonald's La Juan Pablo Duarte";
+			txt2.text = "Clásica cadena de comida rápida de larga trayectoria conocida " +
+				"por sus hamburguesas y papas fritas.";
+			ima2.sprite = Galeria[94];
+			ima3.sprite = Galeria[95];
+			ima4.sprite = Galeria[96];
+			ima5.sprite = Galeria[97];
+			ima6.sprite = Galeria[99];
+			break;
+			
+			
+		case 21:
+			Resultado.SetActive(true);
+		 opcioness.SetActive(false);
+		 
+		 ima1.sprite = Galeria[93];
+			txt1.text = "McDonald's San Luis";
+			txt2.text = "Clásica cadena de comida rápida de larga trayectoria conocida " +
+				"por sus hamburguesas y papas fritas.";
+			ima2.sprite = Galeria[94];
+			ima3.sprite = Galeria[95];
+			ima4.sprite = Galeria[96];
+			ima5.sprite = Galeria[97];
+			ima6.sprite = Galeria[100];
+			break;
+			
+		case 22:
+			Resultado.SetActive(true);
+		 opcioness.SetActive(false);
+		 
+		 ima1.sprite = Galeria[93];
+			txt1.text = "McDonald's Las Colinas";
+			txt2.text = "Clásica cadena de comida rápida de larga trayectoria conocida " +
+				"por sus hamburguesas y papas fritas.";
+			ima2.sprite = Galeria[94];
+			ima3.sprite = Galeria[95];
+			ima4.sprite = Galeria[96];
+			ima5.sprite = Galeria[97];
+			ima6.sprite = Galeria[101];
 			break;
 		
 			
