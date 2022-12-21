@@ -88,32 +88,32 @@ public class Autonomo : MonoBehaviour
 		    
 		    
 			op2.onClick.AddListener(()=> RseultadoOP(7));
-			tx1.text = "Hazlo Simple";
+			tx2.text = "Hazlo Simple";
 		    
-			im1.sprite = Ima[7];
+			im2.sprite = Ima[7];
 		    
 		    
 		    
 		    
 			op3.onClick.AddListener(()=> RseultadoOP(9));
-			tx1.text = "Cinema Centro Cibao";
+			tx3.text = "Cinema Centro Cibao";
 		    
-			im1.sprite = Ima[9];
+			im3.sprite = Ima[9];
 		    
 		    
 		    
 		    
 			op4.onClick.AddListener(()=> RseultadoOP(17));
-			tx1.text = "Jardín Botánico";
+			tx4.text = "Jardín Botánico";
 		    
-			im1.sprite = Ima[14];
+			im4.sprite = Ima[14];
 		    
 		    
 		    
 			op5.onClick.AddListener(()=> RseultadoOP(19));
-			tx1.text = "McDonald's Estrella Sadhalá";
+			tx5.text = "McDonald's Estrella Sadhalá";
 		    
-			im1.sprite = Ima[16];
+			im5.sprite = Ima[16];
 			break;
 			
 			
@@ -126,32 +126,32 @@ public class Autonomo : MonoBehaviour
 		    
 		    
 			op2.onClick.AddListener(()=> RseultadoOP(7));
-			tx1.text = "Hazlo Simple";
+			tx2.text = "Hazlo Simple";
 		    
-			im1.sprite = Ima[7];
+			im2.sprite = Ima[7];
 		    
 		    
 		    
 		    
 			op3.onClick.AddListener(()=> RseultadoOP(9));
-			tx1.text = "Cinema Centro Cibao";
+			tx3.text = "Cinema Centro Cibao";
 		    
-			im1.sprite = Ima[9];
+			im3.sprite = Ima[9];
 		    
 		    
 		    
 		    
 			op4.onClick.AddListener(()=> RseultadoOP(17));
-			tx1.text = "Jardín Botánico";
+			tx4.text = "Jardín Botánico";
 		    
-			im1.sprite = Ima[14];
+			im4.sprite = Ima[14];
 		    
 		    
 		    
 			op5.onClick.AddListener(()=> RseultadoOP(19));
-			tx1.text = "McDonald's Estrella Sadhalá";
+			tx5.text = "McDonald's Estrella Sadhalá";
 		    
-			im1.sprite = Ima[16];
+			im5.sprite = Ima[16];
 			break;
 		    
 		case "monumento":
@@ -358,9 +358,9 @@ public class Autonomo : MonoBehaviour
 		    
 		    
 			op2.onClick.AddListener(()=> RseultadoOP(15));
-			tx1.text = "Parroquia Nuestra Sra. De La Altagracia";
+			tx2.text = "Parroquia Nuestra Sra. De La Altagracia";
 		    
-			im1.sprite = Ima[12];
+			im2.sprite = Ima[12];
 		    
 		    
 		    
@@ -729,6 +729,50 @@ public class Autonomo : MonoBehaviour
 		    
 			im5.sprite = Ima[0];
 			break;
+			
+			
+			
+		case "Lugar ecologico":
+		   
+			op1.onClick.AddListener(()=> RseultadoOP(17));
+			tx1.text = "Jardín Botánico";
+		    
+			im1.sprite = Ima[14];
+		    
+		    
+		    
+			op2.onClick.AddListener(()=> RseultadoOP(5));
+			
+			tx2.text = "Parque Duarte";
+		    
+			im2.sprite = Ima[5];
+		    
+		    
+		    
+		    
+			// op3.onClick.AddListener(()=> RseultadoOP(1));
+			tx3.text = "No hay mas opciones ";
+		    
+			im3.sprite = Ima[0];
+		    
+		    
+		    
+		    
+			// op4.onClick.AddListener(()=> RseultadoOP(1));
+			tx4.text = "No hay mas opciones ";
+		    
+			im4.sprite = Ima[0];
+		    
+		    
+		    
+			// op5.onClick.AddListener(()=> RseultadoOP(1));
+			tx5.text = "No hay mas opciones ";
+		    
+			im5.sprite = Ima[0];
+			break;
+
+			
+			
 
 		    
 		case "Mazucamba Bar & Terraza":
@@ -886,6 +930,48 @@ public class Autonomo : MonoBehaviour
 		    
 			im5.sprite = Ima[0];
 			break;
+			
+			
+			
+		case "Bares tranquilos":
+		   
+			op1.onClick.AddListener(()=> RseultadoOP(23));
+			tx1.text = "Morbos drinks lounge";
+		    
+			im1.sprite = Ima[17];
+		    
+		    
+		    
+			// op2.onClick.AddListener(()=> RseultadoOP(1));
+			tx2.text = "No hay mas opciones  ";
+		    
+			im2.sprite = Ima[0];
+		    
+		    
+		    
+		    
+			// op3.onClick.AddListener(()=> RseultadoOP(1));
+			tx3.text = "No hay mas opciones ";
+		    
+			im3.sprite = Ima[0];
+		    
+		    
+		    
+		    
+			// op4.onClick.AddListener(()=> RseultadoOP(1));
+			tx4.text = "No hay mas opciones ";
+		    
+			im4.sprite = Ima[0];
+		    
+		    
+		    
+			// op5.onClick.AddListener(()=> RseultadoOP(1));
+			tx5.text = "No hay mas opciones ";
+		    
+			im5.sprite = Ima[0];
+			break;
+			
+			
 		    
 		default:
 	    
@@ -1277,6 +1363,23 @@ public class Autonomo : MonoBehaviour
 			ima4.sprite = Galeria[96];
 			ima5.sprite = Galeria[97];
 			ima6.sprite = Galeria[101];
+			break;
+			
+			
+			
+			
+		case 23:
+			Resultado.SetActive(true);
+		 opcioness.SetActive(false);
+		 
+		 ima1.sprite = Galeria[102];
+			txt1.text = "Morbos drinks lounge";
+			txt2.text = "Un gran bar 5 estrellas de Santiago de los Caballeros";
+			ima2.sprite = Galeria[103];
+			ima3.sprite = Galeria[104];
+			ima4.sprite = Galeria[105];
+			ima5.sprite = Galeria[106];
+			ima6.sprite = Galeria[107];
 			break;
 		
 			
