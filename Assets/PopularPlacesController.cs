@@ -6,15 +6,15 @@ using TMPro;
 
 public class PopularPlacesController : MonoBehaviour
 {
-	FirebaseFirestore Database,Database1,Database2,Database3,Database4;
-	public TMP_InputField TextInputField;
-	public GameObject abusador;
-	
+    FirebaseFirestore Database, Database1, Database2, Database3, Database4;
+    public TMP_InputField TextInputField;
+    public GameObject abusador;
+
     void Start()
     {
-	    Database = FirebaseFirestore.DefaultInstance;
-	    
-	    /*
+        Database = FirebaseFirestore.DefaultInstance;
+
+        /*
 	    TABLA Caracteristicas CAMPO c_caracteristicas 
 	    
 	    TABLA Emociones CAMPO e_emociones
@@ -24,15 +24,15 @@ public class PopularPlacesController : MonoBehaviour
 	    
 	    
 	    */
-	    
+
 
     }
 
-	public async void Search()
-    
-	{
-		
-		Query placesQuery = Database.Collection("Lugares").WhereEqualTo("Nombre", TextInputField.text);
+    public async void Search()
+
+    {
+
+        Query placesQuery = Database.Collection("Lugares").WhereEqualTo("Nombre", TextInputField.text);
         QuerySnapshot placeQuerySnapshot = await placesQuery.GetSnapshotAsync();
         foreach (DocumentSnapshot documentSnapshot in placeQuerySnapshot.Documents)
         {
@@ -41,17 +41,68 @@ public class PopularPlacesController : MonoBehaviour
             Dictionary<string, object> city = documentSnapshot.ToDictionary();
             foreach (KeyValuePair<string, object> pair in city)
             {
-	            Debug.Log("{0}: {1}" + pair.Key + pair.Value);
-	            abusador.SetActive(true);
-	            
+                Debug.Log("{0}: {1}" + pair.Key + pair.Value);
+                abusador.SetActive(true);
+
             }
             // Console.WriteLine("");
-        } 
-        
-        
+        }
+
+
+        Query placesQuery2 = Database.Collection("Otros").WhereEqualTo("Nombre", TextInputField.text);
+        QuerySnapshot placeQuerySnapshot2 = await placesQuery.GetSnapshotAsync();
+        foreach (DocumentSnapshot documentSnapshot in placeQuerySnapshot.Documents)
+        {
+            // PopularPlaceModel popularPlaceModel = documentSnapshot.ConvertTo<PopularPlaceModel>();
+            Debug.Log("Document data for {0} document:" + documentSnapshot.Id);
+            Dictionary<string, object> city = documentSnapshot.ToDictionary();
+            foreach (KeyValuePair<string, object> pair in city)
+            {
+                Debug.Log("{0}: {1}" + pair.Key + pair.Value);
+                abusador.SetActive(true);
+
+            }
+            // Console.WriteLine("");
+        }
+
+        Query placesQuery3 = Database.Collection("Melodia").WhereEqualTo("Nombre", TextInputField.text);
+        QuerySnapshot placeQuerySnapshot3 = await placesQuery.GetSnapshotAsync();
+        foreach (DocumentSnapshot documentSnapshot in placeQuerySnapshot.Documents)
+        {
+            // PopularPlaceModel popularPlaceModel = documentSnapshot.ConvertTo<PopularPlaceModel>();
+            Debug.Log("Document data for {0} document:" + documentSnapshot.Id);
+            Dictionary<string, object> city = documentSnapshot.ToDictionary();
+            foreach (KeyValuePair<string, object> pair in city)
+            {
+                Debug.Log("{0}: {1}" + pair.Key + pair.Value);
+                abusador.SetActive(true);
+
+            }
+            // Console.WriteLine("");
+        }
+
+        Query placesQuery4 = Database.Collection("Emociones").WhereEqualTo("e_emociones", TextInputField.text);
+        QuerySnapshot placeQuerySnapshot4 = await placesQuery.GetSnapshotAsync();
+        foreach (DocumentSnapshot documentSnapshot in placeQuerySnapshot.Documents)
+        {
+            // PopularPlaceModel popularPlaceModel = documentSnapshot.ConvertTo<PopularPlaceModel>();
+            Debug.Log("Document data for {0} document:" + documentSnapshot.Id);
+            Dictionary<string, object> city = documentSnapshot.ToDictionary();
+            foreach (KeyValuePair<string, object> pair in city)
+            {
+                Debug.Log("{0}: {1}" + pair.Key + pair.Value);
+                abusador.SetActive(true);
+
+            }
+            // Console.WriteLine("");
+        }
+
+
+
+
     }
-    
-   
+
+
 }
 
 
